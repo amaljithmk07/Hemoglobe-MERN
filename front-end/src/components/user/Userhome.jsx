@@ -85,7 +85,7 @@ const Userhome = () => {
 
   //Servide Button
   const service = () => {
-    if (token != null) {
+    if (token == null) {
       navigate("/login");
     } else {
       navigate("/user/donate");
