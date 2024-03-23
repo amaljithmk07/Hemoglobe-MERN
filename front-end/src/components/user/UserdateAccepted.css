@@ -1,0 +1,56 @@
+.UserdateAccept-body {
+  min-height: 617px;
+  /* background-image: url("/public/home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;  */
+  /* background: linear-gradient(to bottom, white, white, rgb(250, 240, 240)); */
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UserdateAccept-content {
+  width: 70%;
+  color: rgb(62, 62, 62);
+  min-height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  /* background-color: rgb(255, 255, 255); */
+  padding: 20px 0;
+  line-height: 2.45;
+  font-size: 19px;
+
+  font-weight: 500;
+}
+.UserdateAccept-content-heading-sec {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(42, 42, 42);
+  /* background-color: red; */
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1000px) {
+  .UserdateAccept-content {
+    width: 80%;
+  }
+
+  .UserdateAccept-content-heading-sec {
+    font-size: 1.45rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .UserdateAccept-content {
+    width: 85%;
+  }
+}

@@ -1,0 +1,136 @@
+.userbooking-hist-main-body {
+  min-height: 650px;
+  width: 100%;
+  /* background-color: rgb(205, 45, 45); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  row-gap: 20px;
+}
+.userbooking-hist-img-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  width: 100%;
+  /* background-color: rgb(244, 65, 10); */
+}
+.userbooking-hist-img {
+  height: auto;
+  width: 50%;
+  /* background-color: rgb(121, 255, 153); */
+}
+
+.userbooking-hist-sub-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  /* width: 70%; */
+  width: 1000px;
+  background-image: url("/public/register-background1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  /* background-color: rgb(139, 255, 166); */
+  padding: 50px 0;
+  margin: 50px 0;
+}
+.userbooking-hist-content {
+  min-height: 300px;
+  width: 80%;
+  flex-direction: column;
+  row-gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(6, 35, 255); */
+}
+.userbooking-hist-list-head {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+  /* background-color: rgb(53, 171, 59); */
+  border: 1px dashed rgb(189, 189, 189);
+}
+.userbooking-hist-list-title {
+  min-height: 90px;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.79rem;
+  text-align: center;
+  text-transform: uppercase;
+  /* background-color: rgb(171, 124, 53); */
+}
+.userbooking-hist-list-body-sec {
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* row-gap: 10px; */
+  width: 100%;
+  padding: 20px 0;
+
+  border: 1px dashed rgb(170, 170, 170);
+
+  /* background-color: rgb(255, 8, 0); */
+}
+.userbooking-hist-list-body {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: rgb(225, 110, 43); */
+}
+.userbooking-hist-list-data {
+  height: auto;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(90, 255, 14); */
+  font-weight: 600;
+  font-size: 0.79rem;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1050px) {
+  .userbooking-hist-sub-body {
+    min-height: 250px;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .userbooking-hist-content {
+    width: 90%;
+  }
+  .userbooking-hist-img-body {
+    min-height: 100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .userbooking-hist-list-head {
+    display: none;
+  }
+  .userbooking-hist-list-body {
+    min-height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .userbooking-hist-list-data {
+    height: auto;
+    width: 100%;
+  }
+}

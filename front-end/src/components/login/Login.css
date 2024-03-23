@@ -1,0 +1,188 @@
+.login-body {
+  /* min-height: 650px; */
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/register-background1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.login-card {
+  height: 340px;
+  /* width: 22%; */
+  width: 320px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  border: 5px solid rgb(255, 255, 255);
+
+  background-image: url("/public/register-card-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.347);
+
+  /* background-color: #fef8f8; */
+}
+.login-card-form {
+  height: 65%;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.login-head {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.98rem;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* background-color: red; */
+}
+.login-input-sec {
+  height: 45px;
+  width: 80%;
+  /* font-weight: 600;
+  font-size: 0.95rem; */
+  /* padding: 0px 0px 0px 12px;
+  /**/
+  outline: 1px solid rgb(240, 219, 228);
+
+  color: rgb(41, 41, 41);
+  letter-spacing: 0.1px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.login-input-logo {
+  height: 45%;
+  cursor: pointer;
+  /* background-color: rgb(53, 233, 17); */
+}
+.login-input {
+  height: 45px;
+  width: 84%;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 0px solid rgb(237, 237, 237);
+  padding: 0px 0px 0px 12px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: rgb(41, 41, 41);
+  letter-spacing: 0.1px;
+  /* text-transform: capitalize; */
+  /* background-color: rgb(255, 140, 249); */
+}
+.login-input:focus {
+  outline: none;
+}
+.login-input-sec:focus-within {
+  outline: 2px solid rgb(255, 204, 224);
+}
+/* .login-input::-webkit-outer-spin-button,
+.login-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+} */
+.login-input::placeholder {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+.login-submit-sec {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: bisque; */
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.login-submit-btn {
+  width: 55%;
+  height: 40px;
+  letter-spacing: 0.7px;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  display: flex;
+  /* background-color: rgb(255, 221, 223); */
+  background-image: url("/public/register-background1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.34); */
+  box-shadow: 0px 1px 5px rgba(255, 180, 200, 0.832);
+  transition: all 0.3s ease-in-out;
+}
+.login-submit-btn:hover {
+  background-image: url("/public/register-background1.jpg");
+  background-position: bottom;
+  background-repeat: repeat;
+  object-fit: unset;
+}
+.login-link {
+  font-size: 1rem;
+  /* height: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  /* background-color: red; */
+  font-weight: 600;
+}
+.login-reg-link {
+  font-size: 1rem;
+  color: rgb(38, 38, 38);
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-with-google-sec {
+  font-size: 1.02rem;
+  height: 40px;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  width: 75%;
+  background-color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.login-with-google {
+  height: 70%;
+  width: auto;
+}
+@media screen and (max-width: 400px) {
+  .login-card {
+    height: 300px;
+    width: 80%;
+  }
+  .login-link,
+  .login-reg-link {
+    font-size: 0.9rem;
+  }
+}

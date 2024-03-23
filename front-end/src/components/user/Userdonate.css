@@ -1,0 +1,233 @@
+.userdonate-body {
+  width: 100%;
+  min-height: 600px;
+  /* background-color: rgb(255, 0, 0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.userdonate-content {
+  background-image: url("/public/register-background1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  /* background-color: blue; */
+  min-height: 470px;
+  /* width: 50%; */
+  width: 700px;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 30px;
+}
+.userdonate-heading {
+  width: 100%;
+  height: 80px;
+  color: rgb(0, 0, 0);
+  /* background-color:  aqua; */
+  font-size: 35px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  /* text-shadow: 0px 0px 10px rgb(255, 255, 255); */
+}
+
+.userdonate-form {
+  min-height: 400px;
+  width: 100%;
+  /* background-color: rgb(255, 121, 121); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.userdonate-upload-sec {
+  height: 150px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgb(142, 99, 182); */
+  font-weight: 600;
+  row-gap: 10px;
+  font-size: 0.9rem;
+}
+.userdonate-uploadimage {
+  height: 90px;
+  width: auto;
+  cursor: pointer;
+}
+.Userdonate-file-uploaded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Userdonate-blue-tick {
+  height: 25px;
+  width: auto;
+  cursor: pointer;
+}
+
+.userdonate-input-sec {
+  min-height: 400px;
+  width: 100%;
+  /* background-color: rgb(221, 100, 239); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.userdonate-inputfield {
+  height: 40px;
+  font-size: 15px;
+
+  font-weight: 600;
+  width: 70%;
+  display: flex;
+  column-gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.userdonate-input {
+  border-radius: 2px;
+  border: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  height: 80%;
+  width: 70%;
+}
+
+.userdonate-input:focus {
+  outline: none;
+}
+.userdonate-inputfield:focus-within {
+  outline: 1.5px solid rgb(255, 154, 154);
+}
+.userdonate-submit-sec {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: rebeccapurple; */
+}
+#userdonate-btn {
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 40px;
+  color: rgb(35, 35, 35);
+  border: 2px solid rgb(232, 198, 198);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1.9px;
+  transition: border-radius 0.5s, border 0.2s;
+  border-radius: 5px;
+}
+
+#userdonate-btn:hover {
+  transition-timing-function: ease;
+  border-radius: 22px;
+}
+.userdonate-warning-sec {
+  background-image: url("/public/register-background1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  /* background-color: blue; */
+  min-height: 480px;
+  width: 70%;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.userdonate-warning {
+  width: 80%;
+
+  line-height: 40px;
+  text-transform: capitalize;
+  font-size: 1.04rem;
+  text-align: justify;
+  font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+  .userdonate-warning-sec {
+    min-height: 480px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .userdonate-content {
+    width: 90%;
+  }
+  .userdonate-heading {
+    align-items: center;
+  }
+  .userdonate-warning-sec{
+    padding: 30px 0;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .userdonate-heading {
+    font-size: 2rem;
+  }
+  .userdonate-uploadimage {
+    height: 70px;
+    width: auto;
+  }
+  .userdonate-inputfield {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .userdonate-heading {
+    font-size: 1.7rem;
+  }
+  .userdonate-inputfield {
+    width: 90%;
+    font-size: 0.8rem;
+    column-gap: 8px;
+  }
+  .userdonate-input {
+    font-size: 0.85rem;
+    width: 70%;
+    /* background-color: red; */
+  }
+  #userdonate-btn {
+    width: 120px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+
+}
+@media screen and (max-width: 350px) {
+  .userdonate-inputfield {
+    width: 90%;
+    font-size: 0.8rem;
+    column-gap: 8px;
+  }
+  .userdonate-input {
+    width: 65%;
+    /* background-color: red; */
+  }
+}

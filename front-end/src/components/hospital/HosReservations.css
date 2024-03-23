@@ -1,0 +1,138 @@
+.hosreservations-main-body {
+  min-height: 637px;
+  width: 100%;
+  /* background-color: rgb(168, 18, 18); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hosreservations-sub-body {
+  width: 75%;
+  min-height: 500px;
+  /* background-color: yellow; */
+  background-image: url("/public/donate.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  letter-spacing: 0.5px;
+  font-family: system-ui;
+  text-align: center;
+  border-radius: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  padding: 50px 0;
+}
+.hosreservations-sub-body-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  justify-content: center;
+  /* background-color: red; */
+  height: 100px;
+}
+
+.hosreservations-sub-body-content {
+  width: 100%;
+  min-height: 70%;
+  display: flex;
+  justify-content: center;
+  row-gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(50px);
+
+  /* background-color: rgb(6, 6, 255); */
+}
+.hosreservations-content-titles-sec {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  /* background-color: rgb(130, 253, 121); */
+}
+.hosreservations-title {
+  height: 45px;
+  /* background-color: rgba(250, 148, 5, 0.901); */
+  width: 12%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+
+  font-weight: 700;
+  /* border-style: groove ; */
+}
+.hosreservations-content-list {
+  width: 95%;
+  min-height: 20%;
+  flex-wrap: wrap;
+
+  display: flex;
+  /* column-gap: 20px; */
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: rgb(10, 127, 2); */
+}
+.hosreservations-data {
+  /* min-height: 45px; */
+  height: auto;
+  /* background-color: rgba(5, 250, 156, 0.901); */
+  width: 12%;
+  font-size: 0.78rem;
+  /* padding: 0px 10px; */
+  font-weight: 600;
+  text-transform: capitalize;
+  display: flex;
+  color: rgb(45, 45, 45);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* border-style: groove ; */
+}
+.hosreservations-img {
+  height: 45px;
+  /* background-color: rgba(126, 126, 126, 0.368); */
+  width: 45px;
+  aspect-ratio: 1/1;
+  /* border-style: groove ; */
+  border: 2px solid rgb(197, 163, 163);
+  border-radius: 25px;
+  transition: transform 0.2s;
+}
+.hosreservations-img:hover {
+  transform: scale(1.2);
+}
+
+#view,
+#delete {
+  height: 20px;
+  width: auto;
+  /* font-size: 10px; */
+  /* margin-left: 10px; */
+  padding: 5px 5px;
+  /* color: #393939; */
+  transition: transform 0.2s;
+}
+
+#view:hover {
+  color: #0074ae;
+  transform: scale(1.2);
+}
+
+#delete:hover {
+  color: #ff2d2d;
+  transform: scale(1.2);
+}
