@@ -77,6 +77,12 @@
     width: 90%;
   }
 }
+@media screen and (max-width: 600px) {
+  .usercertificate-content-sec {
+    font-size: .9rem;
+    text-transform: none;
+  }
+}
 @media screen and (max-width: 450px) {
   .usercertificate-main-body {
     padding: 50px 0;
