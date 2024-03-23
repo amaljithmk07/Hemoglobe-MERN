@@ -155,8 +155,8 @@ const HosPlasmaCenter = () => {
       {list == true ? (
         <div className="hosplasmacenter-user-list-body" data-aos="fade-down">
           <div className="hosplasmacenter-user-list-sub-body" ref={ref}>
-            <div className="hosplasmacenter-user-list-title-sec">jhjh</div>
-            <div className="hosplasmacenter-user-list-content-sec">088888</div>
+            <div className="hosplasmacenter-user-list-title-sec">demon</div>
+            <div className="hosplasmacenter-user-list-content-sec">demeoeoeno</div>
           </div>
         </div>
       ) : (

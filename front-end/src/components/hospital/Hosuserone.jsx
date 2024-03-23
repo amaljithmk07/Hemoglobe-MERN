@@ -103,7 +103,7 @@ const Hosuserone = () => {
       .then((data) => {
         console.log(data);
         setTimeout(() => {
-          navigate("/hospital/bookedlist");
+          navigate("/hospital/reservations");
         }, 200);
       })
       .catch((err) => {
