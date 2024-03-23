@@ -80,6 +80,7 @@
 @media screen and (max-width: 600px) {
   .usercertificate-content-sec {
     font-size: .9rem;
+    font-weight: unset;
     text-transform: none;
   }
 }
