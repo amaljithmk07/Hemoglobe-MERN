@@ -121,9 +121,10 @@ const Userdonate = () => {
             })
             .then((data) => {
               console.log(data);
-              setTimeout(() => {
-                toast.success("Booking Successful");
-              }, 1500);
+              toast.success("Booking Successful", {
+                position: "bottom-center",
+              });
+              navigate("/user/date-accept");
             })
             .catch((err) => {
               console.log(err);
