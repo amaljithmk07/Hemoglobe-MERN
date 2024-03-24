@@ -38,8 +38,53 @@ const Userdonate = () => {
   const currentDate = date + "/" + month + "/" + year;
 
   //Submit User Details
-
   const detailsSubmit = (e) => {
+    e.preventDefault();
+    let image = document.forms["donateForm"]["image"].value;
+    let name = document.forms["donateForm"]["name"].value;
+    let date_of_birth = document.forms["donateForm"]["date_of_birth"].value;
+    let blood_group = document.forms["donateForm"]["blood_group"].value;
+    let phone_number = document.forms["donateForm"]["phone_number"].value;
+    let gender = document.forms["donateForm"]["gender"].value;
+    let address = document.forms["donateForm"]["address"].value;
+
+    if (image == "") {
+      toast.error("Image must upload", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (name == "") {
+      toast.error("Name is Empty", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (date_of_birth == "") {
+      toast.error("Date of birth is Empty", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (blood_group == "") {
+      toast.error("Blood Group is Empty", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (phone_number == "") {
+      toast.error("Phone Number is Empty", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (gender == "") {
+      toast.error("Gender is Empty", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (address == "") {
+      toast.error("Address is Empty", {
+        position: "bottom-center",
+      });
+      return false;
+    }
+
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
         confirmButton: "btn btn-success",
@@ -105,7 +150,7 @@ const Userdonate = () => {
           });
         }
       });
-    e.preventDefault();
+    // e.preventDefault();
   };
 
   // Checking user status
@@ -179,7 +224,11 @@ const Userdonate = () => {
                 <div className="userdonate-heading">
                   <>DONOR &nbsp;DETAILS</>
                 </div>
-                <form encType="multipart/form-data" className="userdonate-form">
+                <form
+                  encType="multipart/form-data"
+                  className="userdonate-form"
+                  name="donateForm"
+                >
                   {" "}
                   <div className="userdonate-upload-sec">
                     <input
@@ -300,7 +349,7 @@ const Userdonate = () => {
                   </div>
                   <div className="userdonate-submit-sec">
                     <button
-                      type="button"
+                      type="input"
                       id="userdonate-btn"
                       onClick={detailsSubmit}
                     >
