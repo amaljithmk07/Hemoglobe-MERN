@@ -36,7 +36,9 @@ const HosDonorHistory = () => {
       <div className="hosnewbookings-main-body">
         <Toaster position="bottom-center" />
         <div className="hosnewbookings-sub-body">
-          <div className="hosnewbookings-sub-body-heading">Donor history </div>
+          <div className="hosnewbookings-sub-body-heading">
+            Donor history (Under Process)
+          </div>
           {results.length != 0 ? (
             <div className="hosnewbookings-sub-body-content">
               <div className="hosnewbookings-content-titles-sec">

@@ -8,7 +8,8 @@
 }
 
 .hosnewbookings-sub-body {
-  width: 75%;
+  /* width: 75%; */
+  width: 1150px;
   min-height: 500px;
   /* background-color: yellow; */
   background-image: url("/public/donate.jpg");
@@ -37,7 +38,6 @@
   justify-content: center;
   /* background-color: red; */
   height: 100px;
-  
 }
 
 .hosnewbookings-sub-body-content {
@@ -135,4 +135,42 @@
 #delete:hover {
   color: #ff2d2d;
   transform: scale(1.2);
+}
+@media screen and (max-width: 1200px) {
+  .hosnewbookings-sub-body {
+    width: 95%;
+    min-height: 400px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .hosnewbookings-title,
+  .hosnewbookings-data {
+    font-size: 0.7rem !important;
+  }
+}
+@media screen and (max-width: 780px) {
+  .hosnewbookings-title {
+    display: none;
+  }
+  .hosnewbookings-content-list {
+    flex-direction: column;
+    height: 250px;
+    width: 350px;
+    border: 2px solid white;
+    border-radius: 10px;
+    /* background-color: red; */
+  }
+  .hosnewbookings-data {
+    /* background-color: cyan; */
+    width: 100%;
+  }
+  #view,
+  #delete {
+    height: 17px !important ;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hosnewbookings-content-list {
+    width: 90%;
+  }
 }

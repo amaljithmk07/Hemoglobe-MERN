@@ -14,7 +14,8 @@
 }
 
 .hos-userone-sub-body {
-  width: 50%;
+  /* width: 50%; */
+  width: 750px;
   min-height: 500px;
   /* background-image: linear-gradient(
     205deg,
@@ -62,7 +63,7 @@
   flex-direction: column;
   row-gap: 30px;
   /* background-color: rgb(96, 14, 14); */
-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 .hos-userone-sub-body-content-left {
   width: 80%;
@@ -150,4 +151,35 @@ backdrop-filter: blur(2px);
     rgb(255, 230, 230)
   );
   /* background-color: rgb(255, 213, 213); */
+}
+
+@media screen and (max-width: 800px) {
+  .hos-userone-sub-body {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hos-userone-sub-body-heading {
+    font-size: 1.64rem;
+  }
+
+  .h-u-s-c-image {
+    height: 90%;
+    width: 90%;
+  }
+  .h-u-s-c-name-sec {
+    font-size: 1.2rem;
+  }
+  .h-u-s-c-right-data-sec {
+    font-size: 0.8rem;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+  }
+  .hos-userone-sub-body-content-right {
+    width: 80%;
+    min-height: 250px;
+  }
+  .hos-userone-sub-body-content-button {
+    width: 45%;
+  }
 }
