@@ -156,7 +156,9 @@ const Hosuserone = () => {
                 <div className="hos-userone-sub-body-content-left">
                   <div className="h-u-s-c-image-sec">
                     <img
-                      src={`/upload/${data.image}`}
+                      // src={`/upload/${data.image}`}
+                      src={`${data.image}`}
+
                       alt=""
                       className="h-u-s-c-image"
                     />

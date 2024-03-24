@@ -43,32 +43,28 @@ const HosNewBookings = () => {
   function deleteHandler(id) {
     var confirmation = window.confirm("Want to delete?");
     if (confirmation) {
-
-
       axios
-      .get(`${BASE_URI}/api/hospital/delete-user/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-      .then((data) => {
-        console.log(data.data.data);
-        // setresults(data.data.data);
-      })
-      .catch((err) => {
-        setLoad(false);
+        .get(`${BASE_URI}/api/hospital/delete-user/${id}`, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+        .then((data) => {
+          console.log(data.data.data);
+          // setresults(data.data.data);
+        })
+        .catch((err) => {
+          setLoad(false);
 
-        console.log(err.response.status);
-        if (err.response.status == 401) {
-          setTimeout(() => {
-            toast.error("Session Time out");
-            sessionStorage.clear();
-            navigate("/login");
-          }, 3000);
-        }
-      });
-
-
+          console.log(err.response.status);
+          if (err.response.status == 401) {
+            setTimeout(() => {
+              toast.error("Session Time out");
+              sessionStorage.clear();
+              navigate("/login");
+            }, 3000);
+          }
+        });
     }
   }
 
@@ -102,7 +98,8 @@ const HosNewBookings = () => {
                   <div key={data._id} className="hosnewbookings-content-list">
                     <div className="hosnewbookings-data">
                       <img
-                        src={`/upload/${data.image}`}
+                        // src={`/upload/${data.image}`}
+                        src={`${data.image}`}
                         alt=""
                         className="hosnewbookings-img"
                       />
@@ -183,7 +180,7 @@ const HosNewBookings = () => {
                         src="/trash.png"
                         alt=""
                         id="delete"
-                        onClick={()=>deleteHandler(data._id)}
+                        onClick={() => deleteHandler(data._id)}
                       />
                     </div>
                   </div>

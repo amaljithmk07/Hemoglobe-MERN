@@ -4,26 +4,45 @@ const multer = require("multer");
 const userDB = require("../models/userschema");
 const checkauth = require("../middle-ware/Checkauth");
 const bloodbankDB = require("../models/bloodbankschema");
+require("dotenv").config();
 
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "../front-end/public/upload/");
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.originalname);
+// const storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, "../front-end/public/upload/");
+//   },
+//   filename: function (req, file, cb) {
+//     cb(null, file.originalname);
+//   },
+// });
+
+// const upload = multer({ storage: storage });
+
+const cloudinary = require("cloudinary").v2;
+const { CloudinaryStorage } = require("multer-storage-cloudinary");
+
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.CLOUD_KEY,
+  api_secret: process.env.CLOUD_SECRET,
+});
+const storage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: {
+    folder: "Hemoglobe",
   },
 });
-
 const upload = multer({ storage: storage });
 
 //add
 
-userroutes.post("/add", upload.single("image"), checkauth,async (req, res) => {
+userroutes.post("/add", upload.single("image"), checkauth, async (req, res) => {
   try {
     console.log(req.body);
     const Data = new userDB({
       login_id: req.userData.userId,
-      image: req.file.filename,
+      // image: req.file.filename,
+      image: req.file ? req.file.path : null,
+
       name: req.body.name,
       date_of_birth: req.body.date_of_birth,
       blood_group: req.body.blood_group,
@@ -67,8 +86,8 @@ userroutes.post("/add", upload.single("image"), checkauth,async (req, res) => {
 
 //delete one
 
-userroutes.get("/delete/:id", async(req, res) => {
- await userDB
+userroutes.get("/delete/:id", async (req, res) => {
+  await userDB
     .deleteOne({
       _id: req.params.id,
     })

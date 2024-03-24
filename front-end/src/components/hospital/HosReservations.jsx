@@ -52,7 +52,9 @@ const HosReservations = () => {
               <div key={data._id} className="hosreservations-content-list">
                 <div className="hosreservations-data">
                   <img
-                    src={`/upload/${data.image}`}
+                    // src={`/upload/${data.image}`}
+                    src={`${data.image}`}
+
                     alt=""
                     className="hosreservations-img"
                   />

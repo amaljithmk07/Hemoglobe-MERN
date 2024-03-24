@@ -56,7 +56,8 @@ const HosDonorHistory = () => {
                 <div key={data._id} className="hosnewbookings-content-list">
                   <div className="hosnewbookings-data">
                     <img
-                      src={`/upload/${data.image}`}
+                      // src={`/upload/${data.image}`}
+                      src={`${data.image}`}
                       alt=""
                       className="hosnewbookings-img"
                     />
