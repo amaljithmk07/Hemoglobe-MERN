@@ -138,7 +138,7 @@ const Navbar = () => {
                   <>
                     {/* //Hospital  */}
 
-                    {role == 3 && token !== null ? (
+                    {role == 1 && token !== null ? (
                       <>
                         <li>
                           <Link
@@ -180,23 +180,7 @@ const Navbar = () => {
                         </li>
                       </>
                     ) : (
-                      <>
-                        {/* //Admin  */}
-
-                        {role == 1 && token !== null ? (
-                          <li>
-                            <Link
-                              to={"/user"}
-                              className="hamb-nav-link"
-                              onClick={togglebarOff}
-                            >
-                              Admin
-                            </Link>
-                          </li>
-                        ) : (
-                          <></>
-                        )}
-                      </>
+                      <></>
                     )}
                   </>
                 )}
@@ -266,10 +250,7 @@ const Navbar = () => {
                       <div className="underline"></div>
                     </li>
                     <li>
-                      <Link
-                        to={"/user/certificate"}
-                        className="nav-link"
-                      >
+                      <Link to={"/user/certificate"} className="nav-link">
                         Certificate{" "}
                       </Link>
                       <div className="underline"></div>
@@ -279,7 +260,7 @@ const Navbar = () => {
                   <>
                     {/* //Hospital  */}
 
-                    {role == 3 && token !== null ? (
+                    {role == 1 && token !== null ? (
                       <>
                         <li>
                           <Link
@@ -321,20 +302,7 @@ const Navbar = () => {
                         </li>
                       </>
                     ) : (
-                      <>
-                        {/* //Admin  */}
-
-                        {role == 1 && token !== null ? (
-                          <li>
-                            <Link to={"/user"} className="nav-link">
-                              Admin
-                            </Link>
-                            <div className="underline"></div>
-                          </li>
-                        ) : (
-                          <></>
-                        )}
-                      </>
+                      <></>
                     )}
                   </>
                 )}
