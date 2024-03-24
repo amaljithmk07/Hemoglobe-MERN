@@ -7,7 +7,6 @@ import BASE_URI from "../constant/Constants";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
-
 const HosPlasmaCenter = () => {
   const navigate = useNavigate();
   const token = sessionStorage.getItem("Token");
@@ -72,7 +71,8 @@ const HosPlasmaCenter = () => {
           <div className="hosplasmacenter-blood">
             {" "}
             <img
-              src="/A+ blood.png"
+              // src="/A+ blood.png"
+              src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711290950/Hemoglobe/sze71l3pd7jmosvnlhnc.png"
               alt=""
               className="hosplasmacenter-blood-img"
               onClick={() => bloodgroup("A_positive")}
@@ -82,7 +82,8 @@ const HosPlasmaCenter = () => {
           <div className="hosplasmacenter-blood">
             {" "}
             <img
-              src="/A- blood.png"
+              // src="/A- blood.png"
+              src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711290950/Hemoglobe/clo2jj1tepzdpqhn7xfl.png"
               alt=""
               className="hosplasmacenter-blood-img"
               onClick={() => bloodgroup("A_negative")}
@@ -93,7 +94,8 @@ const HosPlasmaCenter = () => {
           <div className="hosplasmacenter-blood">
             {" "}
             <img
-              src="/B+ blood.png"
+              // src="/B+ blood.png"
+              src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711290950/Hemoglobe/juv0ulyoz6k7hbxawajk.png"
               alt=""
               className="hosplasmacenter-blood-img"
               onClick={() => bloodgroup("B_positive")}
@@ -103,7 +105,8 @@ const HosPlasmaCenter = () => {
           <div className="hosplasmacenter-blood">
             {" "}
             <img
-              src="/B- blood.png"
+              // src="/B- blood.png"
+              src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711290950/Hemoglobe/rvuuiixfczrvuwtmk82l.png"
               alt=""
               className="hosplasmacenter-blood-img"
               onClick={() => bloodgroup("B_negative")}
@@ -113,7 +116,8 @@ const HosPlasmaCenter = () => {
           <div className="hosplasmacenter-blood">
             {" "}
             <img
-              src="/O+ blood.png"
+              // src="/O+ blood.png"
+              src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711290950/Hemoglobe/hpbohzn1dnqc2e9lmrlv.png"
               alt=""
               className="hosplasmacenter-blood-img"
               onClick={() => bloodgroup("O_positive")}
@@ -123,7 +127,8 @@ const HosPlasmaCenter = () => {
           <div className="hosplasmacenter-blood">
             {" "}
             <img
-              src="/O- blood.png"
+              // src="/O- blood.png"
+              src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711290950/Hemoglobe/sofcb6sqoartopygku5e.png"
               alt=""
               className="hosplasmacenter-blood-img"
               onClick={() => bloodgroup("O_negative")}
@@ -133,7 +138,8 @@ const HosPlasmaCenter = () => {
           <div className="hosplasmacenter-blood">
             {" "}
             <img
-              src="/AB+ blood.png"
+              // src="/AB+ blood.png"
+              src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711290950/Hemoglobe/tp4piqulmvmquanmqy4j.png"
               alt=""
               className="hosplasmacenter-blood-img"
               onClick={() => bloodgroup("AB_positive")}
@@ -143,7 +149,8 @@ const HosPlasmaCenter = () => {
           <div className="hosplasmacenter-blood">
             {" "}
             <img
-              src="/AB- blood.png"
+              // src="/AB- blood.png"
+              src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711290950/Hemoglobe/pprjchqirssbryow02ue.png"
               alt=""
               className="hosplasmacenter-blood-img"
               onClick={() => bloodgroup("AB_negative")}
@@ -156,7 +163,9 @@ const HosPlasmaCenter = () => {
         <div className="hosplasmacenter-user-list-body" data-aos="fade-down">
           <div className="hosplasmacenter-user-list-sub-body" ref={ref}>
             <div className="hosplasmacenter-user-list-title-sec">demon</div>
-            <div className="hosplasmacenter-user-list-content-sec">demeoeoeno</div>
+            <div className="hosplasmacenter-user-list-content-sec">
+              demeoeoeno
+            </div>
           </div>
         </div>
       ) : (
