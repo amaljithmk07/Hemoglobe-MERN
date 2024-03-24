@@ -122,13 +122,13 @@ const Userdonate = () => {
             .then((data) => {
               console.log(data);
               setTimeout(() => {
-                toast.success("data.data");
+                toast.success("Booking Successful");
               }, 1500);
             })
             .catch((err) => {
               console.log(err);
               if (err.response.status == 401) {
-                toast.error("err.data");
+                toast.error("Booking Failed");
                 sessionStorage.clear();
                 navigate("/login");
               }
