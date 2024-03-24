@@ -193,6 +193,9 @@
     height: 70px;
     width: auto;
   }
+  .userdonate-warning {
+    font-size: 1rem;
+  }
   .userdonate-inputfield {
     width: 85%;
   }

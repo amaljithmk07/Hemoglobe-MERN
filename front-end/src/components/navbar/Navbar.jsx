@@ -66,7 +66,7 @@ const Navbar = () => {
                 className="hamb-nav-link"
                 onClick={togglebarOff}
               >
-                HOME
+                home
               </Link>
             </li>
             {role == null && token == null ? (
@@ -78,7 +78,7 @@ const Navbar = () => {
                     className="hamb-nav-link"
                     onClick={togglebarOff}
                   >
-                    LOGIN{" "}
+                    login{" "}
                   </Link>
                 </li>{" "}
                 <li>
@@ -87,7 +87,7 @@ const Navbar = () => {
                     className="hamb-nav-link"
                     onClick={togglebarOff}
                   >
-                    REGISTER{" "}
+                    register
                   </Link>
                 </li>
               </>
@@ -203,7 +203,7 @@ const Navbar = () => {
 
                 <li>
                   <Link className="hamb-nav-link" onClick={Logout}>
-                    LOGOUT
+                    logout
                   </Link>
                 </li>
               </>
@@ -223,7 +223,7 @@ const Navbar = () => {
               <Link to={"/home"} className="nav-link">
                 HOME
               </Link>
-              <div className="under"></div>
+              <div className="underline"></div>
             </li>
             {role == null && token == null ? (
               <>
@@ -232,13 +232,13 @@ const Navbar = () => {
                   <Link to={"/login"} className="nav-link">
                     LOGIN{" "}
                   </Link>
-                  <div className="under"></div>
+                  <div className="underline"></div>
                 </li>{" "}
                 <li>
                   <Link to={"/register"} className="nav-link">
                     REGISTER{" "}
                   </Link>
-                  <div className="under"></div>
+                  <div className="underline"></div>
                 </li>
               </>
             ) : (
@@ -251,19 +251,19 @@ const Navbar = () => {
                       <Link to={"/user/donate"} className="nav-link">
                         Booking Page{" "}
                       </Link>
-                      <div className="under"></div>
+                      <div className="underline"></div>
                     </li>
                     <li>
                       <Link to={"/user/date-accept"} className="nav-link">
                         Accept Message{" "}
                       </Link>
-                      <div className="under"></div>
+                      <div className="underline"></div>
                     </li>
                     <li>
                       <Link to={"/user/booking-history"} className="nav-link">
                         Booking History{" "}
                       </Link>
-                      <div className="under"></div>
+                      <div className="underline"></div>
                     </li>
                     <li>
                       <Link
@@ -272,7 +272,7 @@ const Navbar = () => {
                       >
                         Certificate{" "}
                       </Link>
-                      <div className="under"></div>
+                      <div className="underline"></div>
                     </li>
                   </>
                 ) : (
@@ -288,7 +288,7 @@ const Navbar = () => {
                           >
                             New Bookings{" "}
                           </Link>
-                          <div className="under"></div>
+                          <div className="underline"></div>
                         </li>
                         <li>
                           <Link
@@ -297,7 +297,7 @@ const Navbar = () => {
                           >
                             Reservations{" "}
                           </Link>
-                          <div className="under"></div>
+                          <div className="underline"></div>
                         </li>
                         <li>
                           <Link
@@ -306,7 +306,7 @@ const Navbar = () => {
                           >
                             Donor history{" "}
                           </Link>
-                          <div className="under"></div>
+                          <div className="underline"></div>
                         </li>
 
                         <li>
@@ -317,7 +317,7 @@ const Navbar = () => {
                             {/* Blood bank */}
                             Plasma center
                           </Link>
-                          <div className="under"></div>
+                          <div className="underline"></div>
                         </li>
                       </>
                     ) : (
@@ -329,7 +329,7 @@ const Navbar = () => {
                             <Link to={"/user"} className="nav-link">
                               Admin
                             </Link>
-                            <div className="under"></div>
+                            <div className="underline"></div>
                           </li>
                         ) : (
                           <></>
@@ -343,7 +343,7 @@ const Navbar = () => {
                   <Link className="nav-link" onClick={Logout}>
                     LOGOUT
                   </Link>
-                  <div className="under"></div>
+                  <div className="underline"></div>
                 </li>
               </>
             )}

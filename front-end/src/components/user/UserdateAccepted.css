@@ -46,11 +46,12 @@
   }
 
   .UserdateAccept-content-heading-sec {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 650px) {
   .UserdateAccept-content {
     width: 85%;
+    font-size: 1rem;
   }
 }
