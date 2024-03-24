@@ -40,6 +40,37 @@ const HosNewBookings = () => {
   }, []);
 
   //
+  function deleteHandler(id) {
+    var confirmation = window.confirm("Want to delete?");
+    if (confirmation) {
+
+
+      axios
+      .get(`${BASE_URI}/api/hospital/delete-user/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then((data) => {
+        console.log(data.data.data);
+        // setresults(data.data.data);
+      })
+      .catch((err) => {
+        setLoad(false);
+
+        console.log(err.response.status);
+        if (err.response.status == 401) {
+          setTimeout(() => {
+            toast.error("Session Time out");
+            sessionStorage.clear();
+            navigate("/login");
+          }, 3000);
+        }
+      });
+
+
+    }
+  }
 
   return (
     <div className="hosnewbookings-main-body">
@@ -148,7 +179,12 @@ const HosNewBookings = () => {
                       <Link to={`/hospital/userone/${data._id}`}>
                         <img src="/eye.png" alt="" id="view" />
                       </Link>
-                      <img src="/trash.png" alt="" id="delete" />
+                      <img
+                        src="/trash.png"
+                        alt=""
+                        id="delete"
+                        onClick={()=>deleteHandler(data._id)}
+                      />
                     </div>
                   </div>
                 ))}

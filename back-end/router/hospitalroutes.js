@@ -52,6 +52,43 @@ hospitalroutes.get("/view", checkauth, async (req, res) => {
   }
 });
 
+//Delete user
+
+hospitalroutes.get("/delete-user/:id", checkauth, async (req, res) => {
+  try {
+    console.log(req.params.id);
+    await userDB
+      .deleteOne({
+        _id: req.params.id,
+      })
+
+      .then(() => {
+        res.status(200).json({
+          success: true,
+          error: false,
+          message: "User Request Deleted ",
+        });
+
+        // res.send(data)
+      })
+      .catch((err) => {
+        res.status(400).json({
+          success: false,
+          error: true,
+          data: "User Request Deleted  failed",
+          ErrorMessage: err.message,
+        });
+      });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      error: true,
+      data: "Internal server Error",
+      ErrorMessage: err.message,
+    });
+  }
+});
+
 // Booking Approved History
 
 hospitalroutes.get("/booking-approved-history", checkauth, async (req, res) => {
