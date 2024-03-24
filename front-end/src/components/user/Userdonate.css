@@ -66,6 +66,7 @@
   height: 90px;
   width: auto;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .Userdonate-file-uploaded {
   display: flex;
