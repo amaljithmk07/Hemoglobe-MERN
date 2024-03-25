@@ -14,7 +14,6 @@ const Login = () => {
     setLetters({ ...letters, [name]: value });
   };
 
-
   //Loading State
   const [load, setLoad] = useState(false);
 
@@ -57,7 +56,12 @@ const Login = () => {
             <div className="login-head">Login</div>
             <form action="" className="login-card-form">
               <div className="login-input-sec">
-                <img src="/userlogin.png" alt="" className="login-input-logo" />
+                <img
+                  // src="/userlogin.png"
+                  src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711340273/Hemoglobe/v5jzwm7u7mxyxld3gwth.png"
+                  alt=""
+                  className="login-input-logo"
+                />
                 <input
                   type="text"
                   className="login-input"
@@ -69,14 +73,16 @@ const Login = () => {
               <div className="login-input-sec">
                 {showpass == true ? (
                   <img
-                    src="/open-eye-login.png"
+                    // src="/open-eye-login.png"
+                    src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711340271/Hemoglobe/soto1mt8g1yccbsztrkd.png"
                     alt=""
                     className="login-input-logo"
                     onClick={showpassword}
                   />
                 ) : (
                   <img
-                    src="/closed-eye-login.png"
+                    // src="/closed-eye-login.png"
+                    src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711340276/Hemoglobe/uxjjswtxfkmrrhm2ksvd.png"
                     alt=""
                     className="login-input-logo"
                     onClick={showpassword}
@@ -101,13 +107,13 @@ const Login = () => {
                 </button>
               </div>
               {/* <div className="login-with-google-sec">
-              <img
-                src="/login-with-google.png"
-                alt=""
-                className="login-with-google"
-              />
-              Sign in with Google
-            </div> */}
+                <img
+                  src="/login-with-google.png"
+                  alt=""
+                  className="login-with-google"
+                />
+                Sign in with Google
+              </div> */}
             </form>
             <div className="login-link">
               Already have an account ?

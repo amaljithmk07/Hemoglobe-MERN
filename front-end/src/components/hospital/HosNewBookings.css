@@ -12,7 +12,8 @@
   width: 1150px;
   min-height: 500px;
   /* background-color: yellow; */
-  background-image: url("/public/donate.jpg");
+  background-image: url("https://res.cloudinary.com/dqc2xhnac/image/upload/v1711340276/Hemoglobe/njji3vdlr4gdrom7sucz.jpg");
+  /* background-image: url("/public/donate.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

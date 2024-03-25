@@ -174,10 +174,16 @@ const HosNewBookings = () => {
                     <div className="hosnewbookings-data">{data.address}</div>
                     <div className="hosnewbookings-data">
                       <Link to={`/hospital/userone/${data._id}`}>
-                        <img src="/eye.png" alt="" id="view" />
+                        <img
+                          // src="/eye.png"
+                          src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711340270/Hemoglobe/jgtmrjqrmfcqwtp1lo9h.png"
+                          alt=""
+                          id="view"
+                        />
                       </Link>
                       <img
-                        src="/trash.png"
+                        // src="/trash.png"
+                        src="https://res.cloudinary.com/dqc2xhnac/image/upload/v1711340272/Hemoglobe/qcm8vzrpxclzgdu2lhlb.png"
                         alt=""
                         id="delete"
                         onClick={() => deleteHandler(data._id)}
