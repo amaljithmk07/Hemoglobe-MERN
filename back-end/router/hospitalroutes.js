@@ -475,7 +475,7 @@ hospitalroutes.get("/blood-list/:blood", checkauth, async (req, res) => {
         success: true,
         error: false,
         data: Data,
-        message: "single view successful",
+        message: "Seperate Blood donorview successful",
       });
       // res.send(data)
     } else

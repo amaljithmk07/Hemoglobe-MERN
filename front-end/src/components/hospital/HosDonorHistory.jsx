@@ -3,6 +3,7 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import BASE_URI from "../constant/Constants";
+import "./HosDonorHistory.css";
 
 const HosDonorHistory = () => {
   const navigate = useNavigate();
@@ -33,36 +34,34 @@ const HosDonorHistory = () => {
 
   return (
     <>
-      <div className="hosnewbookings-main-body">
+      <div className="hosdonorhistory-main-body">
         <Toaster position="bottom-center" />
-        <div className="hosnewbookings-sub-body">
-          <div className="hosnewbookings-sub-body-heading">
-            Donor history (Under Process)
-          </div>
+        <div className="hosdonorhistory-sub-body">
+          <div className="hosdonorhistory-sub-body-heading">Donor history</div>
           {results.length != 0 ? (
-            <div className="hosnewbookings-sub-body-content">
-              <div className="hosnewbookings-content-titles-sec">
-                <div className="hosnewbookings-title"></div>
-                <div className="hosnewbookings-title">FULL NAME </div>
-                <div className="hosnewbookings-title">BLOOD GROUP</div>
-                <div className="hosnewbookings-title">GENDER</div>
-                <div className="hosnewbookings-title">DATE OF BIRTH</div>
-                <div className="hosnewbookings-title">PHONE</div>
-                <div className="hosnewbookings-title">ADDRESS</div>
-                <div className="hosnewbookings-title"></div>
+            <div className="hosdonorhistory-sub-body-content">
+              <div className="hosdonorhistory-content-titles-sec">
+                <div className="hosdonorhistory-title"></div>
+                <div className="hosdonorhistory-title">FULL NAME </div>
+                <div className="hosdonorhistory-title">BLOOD GROUP</div>
+                <div className="hosdonorhistory-title">GENDER</div>
+                <div className="hosdonorhistory-title">DATE OF BIRTH</div>
+                <div className="hosdonorhistory-title">PHONE</div>
+                <div className="hosdonorhistory-title">ADDRESS</div>
+                <div className="hosdonorhistory-title"></div>
               </div>
 
               {results.map((data) => (
-                <div key={data._id} className="hosnewbookings-content-list">
-                  <div className="hosnewbookings-data">
+                <div key={data._id} className="hosdonorhistory-content-list">
+                  <div className="hosdonorhistory-data">
                     <img
                       // src={`/upload/${data.image}`}
                       src={`${data.image}`}
                       alt=""
-                      className="hosnewbookings-img"
+                      className="hosdonorhistory-img"
                     />
                   </div>
-                  <div className="hosnewbookings-data">{data.name}</div>
+                  <div className="hosdonorhistory-data">{data.name}</div>
                   <div
                     style={{
                       color: "rgb(173, 35, 35)",
@@ -70,7 +69,7 @@ const HosDonorHistory = () => {
                       fontSize: 14,
                       textTransform: "none",
                     }}
-                    className="hosnewbookings-data"
+                    className="hosdonorhistory-data"
                   >
                     {data.blood_group == "A_positive" ? (
                       <>A+ve</>
@@ -122,13 +121,15 @@ const HosDonorHistory = () => {
                       </>
                     )}{" "}
                   </div>
-                  <div className="hosnewbookings-data">{data.gender}</div>
-                  <div className="hosnewbookings-data">
+                  <div className="hosdonorhistory-data">{data.gender}</div>
+                  <div className="hosdonorhistory-data">
                     {data.date_of_birth}
                   </div>
-                  <div className="hosnewbookings-data">{data.phone_number}</div>
-                  <div className="hosnewbookings-data">{data.address}</div>
-                  <div className="hosnewbookings-data">
+                  <div className="hosdonorhistory-data">
+                    {data.phone_number}
+                  </div>
+                  <div className="hosdonorhistory-data">{data.address}</div>
+                  <div className="hosdonorhistory-data">
                     <Link to={`/hospital/userone/${data._id}`}>
                       <img src="/eye.png" alt="" id="view" />
                     </Link>

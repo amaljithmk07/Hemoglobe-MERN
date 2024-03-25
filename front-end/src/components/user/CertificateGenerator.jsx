@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import jsPDF from "jspdf";
 import "./Usercertificate.css";
 
-const Certificate = (name, date, setShowPreview) => {
+const Certificate = (name, date) => {
   try {
     // Create a new jsPDF instance
     const doc = new jsPDF({ orientation: "landscape" });
-
 
     // Add background image
     doc.addImage(

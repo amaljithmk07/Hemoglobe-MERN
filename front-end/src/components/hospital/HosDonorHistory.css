@@ -1,29 +1,27 @@
-.hosreservations-main-body {
+.hosdonorhistory-main-body {
   min-height: 637px;
   width: 100%;
-  /* background-color: rgb(168, 18, 18); */
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hosreservations-sub-body {
+.hosdonorhistory-sub-body {
   /* width: 75%; */
   width: 1150px;
-
   min-height: 500px;
-  /* background-color: yellow; */
+  background-color: rgb(255, 235, 235);
+  /* background-image: url("https://res.cloudinary.com/dqc2xhnac/image/upload/v1711340276/Hemoglobe/njji3vdlr4gdrom7sucz.jpg"); */
   /* background-image: url("/public/donate.jpg"); */
-  background-image: url("/public/register-background1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.136);
   object-fit: cover;
   letter-spacing: 0.5px;
   font-family: system-ui;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 10px;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -31,7 +29,7 @@
   margin: 50px 0;
   padding: 50px 0;
 }
-.hosreservations-sub-body-heading {
+.hosdonorhistory-sub-body-heading {
   width: 100%;
   display: flex;
   align-items: center;
@@ -43,7 +41,7 @@
   height: 100px;
 }
 
-.hosreservations-sub-body-content {
+.hosdonorhistory-sub-body-content {
   width: 100%;
   min-height: 70%;
   display: flex;
@@ -52,21 +50,20 @@
   align-items: center;
   flex-direction: column;
   backdrop-filter: blur(50px);
-
+  border: 3px solid rgb(255, 255, 255);
   /* background-color: rgb(6, 6, 255); */
 }
-.hosreservations-content-titles-sec {
-  width: 95%;
+.hosdonorhistory-content-titles-sec {
+  width: 100%;
   height: 10%;
   display: flex;
   flex-wrap: wrap;
 
   justify-content: space-evenly;
   align-items: center;
-  text-transform: uppercase;
   /* background-color: rgb(130, 253, 121); */
 }
-.hosreservations-title {
+.hosdonorhistory-title {
   height: 45px;
   /* background-color: rgba(250, 148, 5, 0.901); */
   width: 12%;
@@ -79,8 +76,8 @@
   font-weight: 700;
   /* border-style: groove ; */
 }
-.hosreservations-content-list {
-  width: 95%;
+.hosdonorhistory-content-list {
+  width: 100%;
   min-height: 20%;
   flex-wrap: wrap;
 
@@ -90,7 +87,7 @@
   align-items: center;
   /* background-color: rgb(10, 127, 2); */
 }
-.hosreservations-data {
+.hosdonorhistory-data {
   /* min-height: 45px; */
   height: auto;
   /* background-color: rgba(5, 250, 156, 0.901); */
@@ -106,7 +103,7 @@
   align-items: center;
   /* border-style: groove ; */
 }
-.hosreservations-img {
+.hosdonorhistory-img {
   height: 45px;
   /* background-color: rgba(126, 126, 126, 0.368); */
   width: 45px;
@@ -116,7 +113,7 @@
   border-radius: 25px;
   transition: transform 0.2s;
 }
-.hosreservations-img:hover {
+.hosdonorhistory-img:hover {
   transform: scale(1.2);
 }
 
@@ -141,30 +138,34 @@
   transform: scale(1.2);
 }
 @media screen and (max-width: 1200px) {
-  .hosreservations-sub-body {
+  .hosdonorhistory-sub-body {
     width: 95%;
     min-height: 400px;
   }
 }
 @media screen and (max-width: 880px) {
-  .hosreservations-title,
-  .hosreservations-data {
+  .hosdonorhistory-title,
+  .hosdonorhistory-data {
     font-size: 0.8rem !important;
   }
 }
 @media screen and (max-width: 780px) {
-  .hosreservations-title {
-    display: none;
-  }
-  .hosreservations-content-list {
+    .hosdonorhistory-title {
+        display: none;
+    }
+    .hosdonorhistory-sub-body-content {
+        border: unset;
+    
+    }
+  .hosdonorhistory-content-list {
     flex-direction: column;
     height: 250px;
     width: 350px;
-    border: 2px solid white;
+    border: 3px solid rgb(225, 225, 225);
     border-radius: 10px;
-    /* background-color: red; */
+    background-color: rgb(255, 255, 255);
   }
-  .hosreservations-data {
+  .hosdonorhistory-data {
     /* background-color: cyan; */
     column-gap: 10px;
     width: 100%;
@@ -176,7 +177,7 @@
   }
 }
 @media screen and (max-width: 400px) {
-  .hosreservations-content-list {
+  .hosdonorhistory-content-list {
     width: 90%;
   }
 }

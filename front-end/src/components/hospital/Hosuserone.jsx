@@ -11,6 +11,7 @@ const Hosuserone = () => {
   const [date, setdate] = useState([]);
   const [userone, setUserone] = useState([]);
 
+
   const { id } = useParams();
   //view single one
   const [load, setLoad] = useState(false); //loading
@@ -109,9 +110,12 @@ const Hosuserone = () => {
       })
       .then((data) => {
         console.log(data);
+        toast.success("Date Approved Success", {
+          position: "bottom-center",
+        });
         setTimeout(() => {
           navigate("/hospital/reservations");
-        }, 200);
+        }, 1000);
       })
       .catch((err) => {
         console.log(err);
@@ -133,7 +137,13 @@ const Hosuserone = () => {
         }
       )
       .then((data) => {
-        console.log(data);
+        toast.success("Donation Complete", {
+          position: "bottom-center",
+        });
+        setTimeout(() => {
+          navigate("/hospital/reservations");
+        }, 2000);
+        // console.log(data);
       })
       .catch((err) => {
         console.log(err);
@@ -158,7 +168,6 @@ const Hosuserone = () => {
                     <img
                       // src={`/upload/${data.image}`}
                       src={`${data.image}`}
-
                       alt=""
                       className="h-u-s-c-image"
                     />
