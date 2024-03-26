@@ -176,15 +176,77 @@ const HosPlasmaCenter = () => {
       {list == true ? (
         <div className="hosplasmacenter-user-list-body" data-aos="fade-down">
           <div className="hosplasmacenter-user-list-sub-body" ref={ref}>
+            <div className="hosplasmacenter-user-list-content-heading-sec">
+              <div className="hosplasmacenter-heading">ID</div>
+              <div className="hosplasmacenter-heading">name</div>
+              <div className="hosplasmacenter-heading">gender</div>
+              <div className="hosplasmacenter-heading">blood group</div>
+              <div className="hosplasmacenter-heading">donation date</div>
+              <div className="hosplasmacenter-heading">phone number</div>
+            </div>
             {seperateblood.map((data) => (
               <div
                 className="hosplasmacenter-user-list-content-sec"
                 key={data._id}
               >
-                <div className="hosreservations-data">{data.name}</div>
-                <div className="hosreservations-data">{data.gender}</div>
-                <div className="hosreservations-data">{data.donation_date}</div>
-                <div className="hosreservations-data">{data.phone_number}</div>
+                <div className="hosplasmacenter-data">
+                  {data._id.slice(19, 25)}
+                </div>
+                <div className="hosplasmacenter-data">{data.name}</div>
+                <div className="hosplasmacenter-data">{data.gender}</div>
+                <div className="hosplasmacenter-data">
+                  {data.blood_group == "A_positive" ? (
+                    <>A+ve</>
+                  ) : (
+                    <>
+                      {data.blood_group == "A_negative" ? (
+                        <>A-ve</>
+                      ) : (
+                        <>
+                          {data.blood_group == "B_positive" ? (
+                            <>B+ve</>
+                          ) : (
+                            <>
+                              {data.blood_group == "B_negative" ? (
+                                <>B-ve</>
+                              ) : (
+                                <>
+                                  {data.blood_group == "O_positive" ? (
+                                    <>O+ve</>
+                                  ) : (
+                                    <>
+                                      {data.blood_group == "O_negative" ? (
+                                        <>O-ve</>
+                                      ) : (
+                                        <>
+                                          {data.blood_group == "AB_positive" ? (
+                                            <>AB+ve</>
+                                          ) : (
+                                            <>
+                                              {data.blood_group ==
+                                              "AB_negative" ? (
+                                                <>AB-ve</>
+                                              ) : (
+                                                <></>
+                                              )}
+                                            </>
+                                          )}
+                                        </>
+                                      )}
+                                    </>
+                                  )}
+                                </>
+                              )}
+                            </>
+                          )}
+                        </>
+                      )}
+                    </>
+                  )}{" "}
+                </div>
+
+                <div className="hosplasmacenter-data">{data.donation_date}</div>
+                <div className="hosplasmacenter-data">{data.phone_number}</div>
               </div>
             ))}
           </div>
