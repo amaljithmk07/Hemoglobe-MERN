@@ -190,6 +190,7 @@ const Userdonate = () => {
     // If there is no booking, user is eligible to donate
     return true;
   };
+
   return (
     <>
       <div className="userdonate-body">
@@ -214,7 +215,20 @@ const Userdonate = () => {
                 effectiveness of future donations. We appreciate your
                 understanding and dedication to the blood donation process, as
                 it plays a vital role in saving lives and supporting those in
-                need of life-saving transfusions.
+                need of life-saving transfusions. <br />
+                {approveddate[0]?.status == "donated" ? (
+                  <>
+                   Note :  Today is {currentDate}, marking{" "}
+                    {Math.floor(
+                      (new Date() - new Date(approveddate[0].donation_date)) /
+                        (1000 * 60 * 60 * 24)
+                    )}{" "}
+                    days since your last blood donation on{" "}
+                    {approveddate[0]?.donation_date}.
+                  </>
+                ) : (
+                  <></>
+                )}
               </div>
             </div>
           </>

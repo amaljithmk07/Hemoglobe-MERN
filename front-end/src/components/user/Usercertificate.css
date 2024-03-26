@@ -53,6 +53,7 @@
 }
 .usercertificate-download-button {
   background-color: rgb(255, 207, 213);
+  font-size: 0.8rem;
   border: 0;
   width: 180px;
   border-radius: 5px;
@@ -63,7 +64,6 @@
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.2px;
-  font-size: 0.8rem;
   align-items: center;
   cursor: pointer;
 }
@@ -79,9 +79,17 @@
 }
 @media screen and (max-width: 600px) {
   .usercertificate-content-sec {
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: unset;
     text-transform: none;
+  }
+  .usercertificate-download-button {
+    font-size: 0.7rem;
+    width: 150px;
+    height: 35px;
+  }
+  .usercertificate-download-img {
+    height: 15px;
   }
 }
 @media screen and (max-width: 450px) {

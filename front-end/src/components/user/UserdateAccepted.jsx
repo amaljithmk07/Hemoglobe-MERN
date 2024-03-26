@@ -44,6 +44,8 @@ const UserdateAccept = () => {
           this crucial cause. We look forward to presenting you with the
           certificate and expressing our gratitude in person.
           <br />
+          Current status: Donation Complete
+          <br />
           Sincerely,
           <br />
           Calicut Medical College
@@ -58,16 +60,17 @@ const UserdateAccept = () => {
               Dear {approveddate[0].name},
               <br />
               {/* BOOKING  */}
-              APPROVED You are cordially invited to participate in our blood
-              donation drive on {approveddate[0].donation_date}, hosted by the
-              Medical College, Calicut. Your invaluable contribution can make a
-              profound impact on saving lives in our community. Join us in this
+              You are cordially invited to participate in our blood donation
+              drive on {approveddate[0].donation_date}, hosted by the Medical
+              College, Calicut. Your invaluable contribution can make a profound
+              impact on saving lives in our community. Join us in this
               compassionate endeavor as we come together for a noble cause. Your
               presence at the Medical College, Calicut, is crucial to the
               success of this initiative. Let's make a difference and extend a
               helping hand to those in need. Your support is greatly
               appreciated, and we look forward to seeing you at the event. Thank
-              you for being a life-saving hero!,
+              you for being a life-saving hero!, <br />
+              Current status: Booking Approved By the Hospital
               <br />
               Calicut Medical College
             </div>
@@ -90,6 +93,9 @@ const UserdateAccept = () => {
               ensure that potential donors are aware of any opportunities to
               contribute to this crucial and life-saving cause at Calicut
               Medical College.
+              <br />
+              Current status:Pending
+              <br />
             </div>
 
             // <div className="UserdateAccept-content">

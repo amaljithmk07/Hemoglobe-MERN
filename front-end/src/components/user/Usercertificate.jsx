@@ -16,7 +16,6 @@ const Usercertificate = () => {
 
   const approveddate = useSelector((state) => state.user.userdata);
 
-
   ////////////////
   if (approveddate[0]?.status == "donated") {
     var name = approveddate[0]?.name.toUpperCase();
@@ -90,7 +89,10 @@ const Usercertificate = () => {
               </div>
             </>
           ) : (
-            <></>
+            <>
+              You can only download your blood donation certificate after
+              completing your blood donation.
+            </>
           )}
         </div>
       </div>
