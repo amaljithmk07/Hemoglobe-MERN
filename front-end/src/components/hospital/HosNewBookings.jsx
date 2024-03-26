@@ -193,7 +193,17 @@ const HosNewBookings = () => {
                 ))}
               </div>
             ) : (
-              <></>
+              <>
+                <div className="hosnewbookings-sub-body-content">
+                  <div className="hosnewbookings-content-list">
+                    <img
+                      src="/error.png"
+                      alt=""
+                      className="hosnewbookings-error"
+                    />
+                  </div>
+                </div>
+              </>
             )}
           </div>
         </>

@@ -138,7 +138,13 @@ const HosReservations = () => {
             ))}
           </div>
         ) : (
-          <></>
+          <>
+             <img
+                      src="/error.png"
+                      alt=""
+                      className="hosnewbookings-error"
+                    />
+          </>
         )}
       </div>
     </div>

@@ -137,6 +137,11 @@
   color: #ff2d2d;
   transform: scale(1.2);
 }
+
+.hosnewbookings-error {
+  height: 180px;
+  width: auto;
+}
 @media screen and (max-width: 1200px) {
   .hosnewbookings-sub-body {
     width: 95%;
